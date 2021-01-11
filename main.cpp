@@ -9,6 +9,7 @@ using namespace std;
 
 int main() {
 
+	string X, O;
 	char input;
 	bool done = false;
 	TicTacToe game;
@@ -16,7 +17,10 @@ int main() {
 	cout << "Welcome to the Tic Tac Toe game!! " << endl;
 	cout << "********************************" << endl;
 	cout << endl;
+	
 	game.Names();
+
+
 	while (done == false)
 	{
 		game.playGame();

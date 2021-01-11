@@ -11,6 +11,7 @@ public:
     bool marker(int x, int y, char currentP);
     bool Winner(char currentP); // checks winnner
     void Names();
+  
 
 
 
@@ -20,7 +21,8 @@ private:
     int getRow();
     int getColoumn();
     char tic[3][3];
-    //string name1, name2;
+    
+
 };
 
 

@@ -7,6 +7,7 @@ using namespace std;
 
 TicTacToe::TicTacToe() {
     clearGame();
+
 }
 
 int TicTacToe::getRow()
@@ -57,17 +58,13 @@ void TicTacToe::clearGame()
         }
     }
 }
-void TicTacToe::Names()
-{
-    string X, O;
-    cout << "Player 1 enter your name: ";
-    cin >> X;
-    cout << "\n Player 2 enter your name: ";
-    cin >> O;
-    cout << "Player 1's name is: " << X << endl;
-    cout << "Player 2's name is: " << O << endl;
 
-    cout << X << " goes first!" << endl;
+void TicTacToe::Names() {
+    string P1, P2;
+    cout << "Player 1, What is your name? : ";
+    cin >> P1;
+    cout << "Player 2, what is your name? : ";
+    cin >> P2;
 }
 
 void TicTacToe::playGame()
