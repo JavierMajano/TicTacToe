@@ -15,8 +15,8 @@ public:
 
 
 private:
-    int getX();
-    int getY();
+    int getRow();
+    int getColoumn();
     char tic[3][3];
     //string name1, name2;
 };

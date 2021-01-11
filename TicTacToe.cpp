@@ -8,7 +8,7 @@ TicTacToe::TicTacToe() {
     clearGame();
 }
 
-int TicTacToe::getX()
+int TicTacToe::getRow()
 {
     int x;
     bool input = true;
@@ -27,7 +27,7 @@ int TicTacToe::getX()
   
     return x - 1;
 }
-int TicTacToe::getY()
+int TicTacToe::getColoumn()
 {
     int y;
     bool input = true;
@@ -75,8 +75,8 @@ void TicTacToe::playGame()
     int turn = 0;
     while (isDone == false) {
         DisplayBoard();
-        x = getX();
-        y = getY();
+        x = getRow();
+        y = getColoumn();
         if (marker(x, y, currentP) == false)
 
         {
