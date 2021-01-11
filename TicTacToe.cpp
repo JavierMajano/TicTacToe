@@ -1,3 +1,4 @@
+
 #include "TicTacToe.h"
 #include <iostream>
 
@@ -56,6 +57,18 @@ void TicTacToe::clearGame()
         }
     }
 }
+void TicTacToe::Names()
+{
+    string X, O;
+    cout << "Player 1 enter your name: ";
+    cin >> X;
+    cout << "\n Player 2 enter your name: ";
+    cin >> O;
+    cout << "Player 1's name is: " << X << endl;
+    cout << "Player 2's name is: " << O << endl;
+
+    cout << X << " goes first!" << endl;
+}
 
 void TicTacToe::playGame()
 {
@@ -66,11 +79,8 @@ void TicTacToe::playGame()
     char player1 = 'x';
     char player2 = 'o';
     char currentP = 'x';
- /*   cout << "Enter player 1 name: ";
-    cin >> name1;
-    cout << "\n Enter Player 2 name: ";
-    cin >> name2;
-*/
+   
+    cout << endl;
     bool isDone = false;
     int turn = 0;
     while (isDone == false) {

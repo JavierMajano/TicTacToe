@@ -1,3 +1,4 @@
+
 #pragma once
 class TicTacToe
 {
@@ -9,6 +10,7 @@ public:
     void DisplayBoard();
     bool marker(int x, int y, char currentP);
     bool Winner(char currentP); // checks winnner
+    void Names();
 
 
 

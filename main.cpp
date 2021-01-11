@@ -1,10 +1,14 @@
+
 #include <iostream>
 #include "TicTacToe.h"
 
 using namespace std;
 
+
+
+
 int main() {
-	
+
 	char input;
 	bool done = false;
 	TicTacToe game;
@@ -12,6 +16,7 @@ int main() {
 	cout << "Welcome to the Tic Tac Toe game!! " << endl;
 	cout << "********************************" << endl;
 	cout << endl;
+	game.Names();
 	while (done == false)
 	{
 		game.playGame();
@@ -24,9 +29,9 @@ int main() {
 		{
 			done = false;
 		}
-		
+
 	}
-	
+
 
 	return 0;
 }
